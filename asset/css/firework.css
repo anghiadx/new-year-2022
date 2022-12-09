@@ -1,0 +1,194 @@
+/* FIREWORK - BASE */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    background: black;
+}
+#all{
+    /* width: 1000px; */
+    margin: 0 auto;
+    border: 1px solid;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* #overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    background-color: rgba(1,1,1,.5);
+} */
+/* style 1 */
+.firework{
+    /* border: 1px solid green; */
+    /* position: absolute; */
+    position: fixed;
+    /* transition: top .8s linear; */
+    background: white;
+    transform: scale(.5);
+}
+
+@media (max-width: 767px){
+    .firework{
+        transform: scale(.5);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .firework{
+        transform: scale(.8);
+    }
+}
+
+
+/* ======= FIRE 1 STYLE ========== */
+
+/* Style Normal */
+.fire-1{
+    height: 150px;
+    display: flex;
+    /* flex-direction: column; */
+    position: relative;
+    transition: opacity .4s linear;
+    background: inherit;
+}
+.dot-1,.dot-2,.dot-3,.dot-4,.dot-5{
+    width: 10px;
+    height: 10px;
+    background: inherit;
+    border-radius: 50%;
+    position: absolute;
+}
+.dot-1{
+    transition: transform .2s linear;
+}
+.dot-2{
+    transform: scale(.6);
+    /* transform: scale(.6) translateY(-160%); */
+    top: 15%;
+    transition: top 100ms linear;
+}
+.dot-3{
+    transform: scale(.4);
+    /* transform: scale(.4) translateY(-400%); */
+    top: 30%;
+    transition: top 200ms linear;
+}
+.dot-4{
+    transform: scale(.2);
+    /* transform: scale(.2) translateY(-300%); */
+    top: 45%;
+    transition: top 300ms linear;
+}
+.dot-5{
+    transform: scale(.1);
+    top: 60%;
+    transition: top 400ms linear;
+}
+
+/* ================ FIRE 2 STYLE ============= */
+
+/* style normal */
+.fire-2{
+    position: absolute;
+    top: -10%;
+    background: inherit;
+    opacity: 0;
+}
+.group{
+    position: relative;
+    background: inherit;
+}
+.dot-2-1,.dot-2-2,.dot-2-3,.dot-2-4,.dot-2-5{
+    width: 15px;
+    height: 15px;
+    background: inherit;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    /* transition: top 500ms ease-in-out; */
+    
+}
+.dot-2-1{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.dot-2-2{
+    transform: scale(.8);
+    /* transition: top 600ms ease-in-out; */
+}
+.dot-2-3{
+    transform: scale(.6);
+    /* transition: top 800ms ease-in-out; */
+}
+.dot-2-4{
+    transform: scale(.4);
+    /* transition: top 1000ms ease-in-out; */
+}
+.dot-2-5{
+    transform: scale(.3);
+    /* transition: top 1200ms ease-in-out; */
+}
+
+/* ========= DOUBLE FIRE 2 ============= */
+
+/* Fire 2 double*/
+
+.dot-double-1,.dot-double-2,.dot-double-3,.dot-double-4,.dot-double-5{
+    width: 12px;
+    height: 12px;
+    background: inherit;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    transition: top 800ms ease-in-out,background .5s linear;
+    
+}
+
+.dot-double-2{
+    transform: scale(.8);
+}
+.dot-double-3{
+    transform: scale(.6);
+}
+.dot-double-4{
+    transform: scale(.4);
+}
+.dot-double-5{
+    transform: scale(.3);
+}
+
+.sub-double-1,.sub-double-2,.sub-double-3,.sub-double-4{
+    /* background: white; */
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: top .7s,left .5s;
+    opacity: 0;
+}
+
+/* ANGHIADX */
